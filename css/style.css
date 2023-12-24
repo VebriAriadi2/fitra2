@@ -1,0 +1,294 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #1d1d1d;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #49391c;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+
+.navbar-menu {
+    background-color: #49391c;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #49391c;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+        z-index: 2;
+    }
+
+    .navbar-toggler.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .navbar-toggler.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggler.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Header */
+.masthead {
+    background: linear-gradient(to bottom, rgba(139, 69, 19, 0.8) 0%, rgba(139, 69, 19, 0.8) 100%), url('kamera.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    background-color: #2e2a2a;
+    color: #fefefe;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2a2c31a4;
+    color: #ffffff;
+}
+
+/* About */
+.about-section {
+    background-color: #7c4b0f;
+    color:#fff;
+    padding: 4rem 0;
+    text-align: center; /* Menambahkan properti text-align untuk membuat teks menjadi terpusat secara horizontal */
+}
+
+.divider.divider-light {
+    border-color: #fff; /* Sesuaikan dengan warna teks atau latar belakang yang diinginkan */
+    background-color: #fff;
+    height: 0,001rem; /* Atur tinggi divider sesuai keinginan (dalam piksel) */
+    width: 20rem; /* Atur lebar divider sesuai keinginan (dalam piksel) */
+    margin: 1rem auto; /* Tambahkan margin di atas dan di bawah divider, dan atur margin samping menjadi 'auto' */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+/* Portfolio */
+.portfolio-row {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #38414a; /* Warna latar belakang portfolio */
+    padding: 2rem; /* Berikan padding agar kontennya tidak langsung berbatasan dengan tepi */
+}
+
+.portfolio-item {
+    width: calc(33.333% - 1rem);
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 0.1rem solid #fff;
+    border-radius: 0.01rem;
+    transition: transform 0.3s;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsif untuk gambar potret */
+@media (max-width: 767px) {
+    .portfolio-item {
+        width: calc(50% - 1rem);
+    }
+}
+
+
+/* Contact */
+.contact-section {
+    background-color: #888888;
+    padding: 5rem 0;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #48494a;
+    padding: 3rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 60px; /* Adjust based on your header height */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .portfolio-item {
+        width: calc(50% - 1rem);
+    }
+}
