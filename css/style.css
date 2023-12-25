@@ -1,6 +1,7 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Menambahkan overflow-x: hidden untuk mengatasi tampilan pada perangkat seluler */
 }
 
 body {
@@ -21,6 +22,7 @@ body {
     background-color: #49391c;
     padding: 1rem 0;
     position: relative;
+    z-index: 1000; /* Menambahkan z-index yang lebih tinggi */
 }
 
 .navbar-brand {
@@ -39,8 +41,9 @@ body {
     top: 1rem;
     right: 1rem;
 }
+
 .navbar-toggler:hover {
-    background-color: #5f5346ba; /* Change the color on hover */
+    background-color: #5f5346ba;
 }
 
 .bar {
@@ -59,9 +62,8 @@ body {
 .navbar-nav {
     list-style: none;
     display: flex;
-    
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -78,6 +80,7 @@ body {
 .nav-link:hover {
     color: #a0b0c2;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -86,6 +89,7 @@ body {
         opacity: 1;
     }
 }
+
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     .navbar-menu {
@@ -98,7 +102,6 @@ body {
         width: 100%;
         text-align: center;
         z-index: 1;
-        
     }
 
     .navbar-menu.active {
@@ -106,9 +109,8 @@ body {
         background-color: #3a2617;
         text-align: center;
         width: 20%;
-        opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-        animation: fadeIn 2s forwards; 
-        
+        opacity: 0;
+        animation: fadeIn 2s forwards;
     }
 
     .navbar-toggler {
@@ -139,8 +141,6 @@ body {
     }
 }
 
-
-
 /* Header */
 .masthead {
     background: linear-gradient(to bottom, rgba(139, 69, 19, 0.8) 0%, rgba(139, 69, 19, 0.8) 100%), url('kamera.jpg');
@@ -151,12 +151,9 @@ body {
     color: #fff;
     text-align: center;
     padding: 5rem 0;
-    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    opacity: 0;
     animation: fadeIn 2s forwards;
-
 }
-
-
 
 .header-content {
     max-width: 600px;
@@ -199,19 +196,16 @@ body {
     color: #fff;
     text-align: center;
     padding: 5rem 0;
-    color:#fff;
-    padding: 4rem 0;
-    text-align: center; /* Menambahkan properti text-align untuk membuat teks menjadi terpusat secara horizontal */
-    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    opacity: 0;
     animation: fadeIn 2s forwards;
 }
 
 .divider.divider-light {
-    border-color: #fff; /* Sesuaikan dengan warna teks atau latar belakang yang diinginkan */
+    border-color: #fff;
     background-color: #fff;
-    height: 0,001rem; /* Atur tinggi divider sesuai keinginan (dalam piksel) */
-    width: 20rem; /* Atur lebar divider sesuai keinginan (dalam piksel) */
-    margin: 1rem auto; /* Tambahkan margin di atas dan di bawah divider, dan atur margin samping menjadi 'auto' */
+    height: 0.001rem;
+    width: 20rem;
+    margin: 1rem auto;
 }
 
 .section-title {
@@ -224,8 +218,9 @@ body {
     font-size: 1.1rem;
     margin-bottom: 3rem;
 }
+
 /* Portfolio */
-.container-fluid{
+.container-fluid {
     background: linear-gradient(to bottom, rgba(68, 62, 58, 0.626) 0%, rgba(50, 44, 41, 0.829) 100%), url('kamera2.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -235,38 +230,29 @@ body {
     text-align: center;
     padding: 1rem 0;
 }
+
 .section-port {
-    /* background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 0%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff; /* Ganti dengan warna yang sesuai */
-    margin-bottom: 0,1% ;
+    color: #ffffff;
+    margin-bottom: 0.1%;
     text-align: center;
-    font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang diinginkan */
-    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    font-family: 'Arial', sans-serif;
+    opacity: 0;
     animation: fadeIn 2s forwards;
 }
-.portfolio-row {
 
+.portfolio-row {
     margin-top: 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 10%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover; */
     color: #ffffff00;
     text-align: center;
-    padding: 2rem; /* Berikan padding agar kontennya tidak langsung berbatasan dengan tepi */
+    padding: 2rem;
 }
 
 .portfolio-item {
@@ -300,7 +286,6 @@ body {
     }
 }
 
-
 /* Contact */
 .contact-section {
     background-color: #888888;
@@ -322,10 +307,9 @@ footer {
     padding: 3rem 0;
     text-align: center;
     color: #fff;
-    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
 
 .footer-content {
     max-width: 600px;
@@ -341,7 +325,7 @@ footer {
         position: absolute;
         width: 100%;
         text-align: center;
-        top: 60px; /* Adjust based on your header height */
+        top: 60px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
