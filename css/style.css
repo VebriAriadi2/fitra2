@@ -56,6 +56,7 @@ body {
 .navbar-nav {
     list-style: none;
     display: flex;
+    
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
 }
@@ -72,7 +73,15 @@ body {
 }
 
 .nav-link:hover {
-    color: #0056b3;
+    color: #a0b0c2;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
@@ -80,16 +89,23 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
+        background-color: #38414a;
         top: 70px;
         right: 0;
         width: 100%;
-        background-color: #49391c;
         text-align: center;
         z-index: 1;
+        
     }
 
     .navbar-menu.active {
         display: flex;
+        background-color: #3a2617;
+        text-align: center;
+        width: 20%;
+        opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+        animation: fadeIn 1s forwards; 
+        
     }
 
     .navbar-toggler {
@@ -115,7 +131,7 @@ body {
     }
 
     .nav-item {
-        margin: 10px 0;
+        margin: 5px 7;
     }
 }
 
