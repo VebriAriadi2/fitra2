@@ -153,6 +153,8 @@ body {
     padding: 5rem 0;
     opacity: 0;
     animation: fadeIn 2s forwards;
+    position: relative; /* Tambahkan properti position */
+    z-index: 999; /* Tambahkan z-index yang tinggi */
 }
 
 .header-content {
