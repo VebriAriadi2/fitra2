@@ -39,6 +39,9 @@ body {
     top: 1rem;
     right: 1rem;
 }
+.navbar-toggler:hover {
+    background-color: #5f5346ba; /* Change the color on hover */
+}
 
 .bar {
     width: 30px;
@@ -111,6 +114,7 @@ body {
     .navbar-toggler {
         display: block;
         z-index: 2;
+        transition: background-color 0.3s;
     }
 
     .navbar-toggler.active .bar:nth-child(1) {
@@ -184,7 +188,14 @@ body {
 
 /* About */
 .about-section {
-    background-color: #7c4b0f;
+    background: linear-gradient(to bottom, rgba(69, 49, 34, 0.8) 0%, rgba(84, 49, 24, 0.8) 100%), url('kamera4.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
     color:#fff;
     padding: 4rem 0;
     text-align: center; /* Menambahkan properti text-align untuk membuat teks menjadi terpusat secara horizontal */
@@ -209,12 +220,35 @@ body {
     margin-bottom: 3rem;
 }
 /* Portfolio */
+.section-port {
+    background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 0%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Ganti dengan warna yang sesuai */
+    margin-bottom: 0,1% ;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang diinginkan */
+}
 .portfolio-row {
-    margin-top: 3rem;
+
+    margin-top: 0rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #38414a; /* Warna latar belakang portfolio */
+    background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 10%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
     padding: 2rem; /* Berikan padding agar kontennya tidak langsung berbatasan dengan tepi */
 }
 

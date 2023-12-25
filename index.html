@@ -7,6 +7,20 @@
     <meta name="author" content="" />
     <title>Portfolio Mas Fitra</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animated {
+        animation: fadeIn 1s forwards;
+    }</style>
 </head>
 <body id="page-top">
  <!-- Navigation -->
@@ -58,8 +72,11 @@
 
     <!-- Portfolio -->
     <div id="portfolio">
+        
         <div class="container-fluid">
+            <h2 class="section-port">Portfolio</h2>
             <div class="row portfolio-row">
+                
                 <div class="col-lg-4 col-sm-6 portfolio-item">
                     <a class="portfolio-box" href="css/kamera2.jpg">
                         <img class="img-fluid" src="css/kamera2.jpg"/>
@@ -194,6 +211,15 @@
             var navbarToggler = document.querySelector('.navbar-toggler');
             navbarToggler.addEventListener('click', toggleNavbar);
         });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+        var navbar = document.querySelector('.navbar');
+        if (navbar) {
+            navbar.classList.add('animated');
+        }
+    });
+
     </script>
     
 </body>
