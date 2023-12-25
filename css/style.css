@@ -107,7 +107,7 @@ body {
         text-align: center;
         width: 20%;
         opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-        animation: fadeIn 1s forwards; 
+        animation: fadeIn 2s forwards; 
         
     }
 
@@ -151,6 +151,9 @@ body {
     color: #fff;
     text-align: center;
     padding: 5rem 0;
+    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards;
+
 }
 
 
@@ -199,6 +202,8 @@ body {
     color:#fff;
     padding: 4rem 0;
     text-align: center; /* Menambahkan properti text-align untuk membuat teks menjadi terpusat secara horizontal */
+    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards;
 }
 
 .divider.divider-light {
@@ -220,12 +225,22 @@ body {
     margin-bottom: 3rem;
 }
 /* Portfolio */
-.section-port {
-    background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 0%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
+.container-fluid{
+    background: linear-gradient(to bottom, rgba(68, 62, 58, 0.626) 0%, rgba(50, 44, 41, 0.829) 100%), url('kamera2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.section-port {
+    /* background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 0%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover; */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -235,6 +250,8 @@ body {
     margin-bottom: 0,1% ;
     text-align: center;
     font-family: 'Arial', sans-serif; /* Ganti dengan nama font yang diinginkan */
+    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards;
 }
 .portfolio-row {
 
@@ -242,12 +259,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 10%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
+    /* background: linear-gradient(to bottom, rgba(68, 62, 58, 0.8) 10%, rgba(50, 44, 41, 0.8) 100%), url('kamera2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
-    color: #fff;
+    background-size: cover; */
+    color: #ffffff00;
     text-align: center;
     padding: 2rem; /* Berikan padding agar kontennya tidak langsung berbatasan dengan tepi */
 }
@@ -305,7 +322,10 @@ footer {
     padding: 3rem 0;
     text-align: center;
     color: #fff;
+    opacity: 0; /* Set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards;
 }
+
 
 .footer-content {
     max-width: 600px;
